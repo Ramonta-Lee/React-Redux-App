@@ -9,7 +9,7 @@ import {
 const initialState = {
   isLoading: false,
   jobs: null,
-  error: "",
+  error: ""
 };
 
 export const reducer = (state = initialState, action) => {
@@ -24,6 +24,11 @@ export const reducer = (state = initialState, action) => {
         ...state,
         isLoading: false,
         jobs: action.payload
+      };
+    case FETCHING_JOB_FAIL:
+      return {
+        ...state,
+        error: "Failed to fetch job!"
       };
     default:
       return state;
