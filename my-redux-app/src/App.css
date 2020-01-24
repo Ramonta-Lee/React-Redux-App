@@ -1,5 +1,23 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.strap-card {
+  width: 60%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-img-top {
+  /* border: 1px solid blue; */
 }
 
 .App-logo {

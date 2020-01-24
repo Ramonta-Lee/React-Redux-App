@@ -7,6 +7,7 @@ import logger from "redux-logger";
 
 
 import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import {reducer} from "./reducers";
 import App from "./App";
